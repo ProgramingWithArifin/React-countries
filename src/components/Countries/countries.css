@@ -1,0 +1,13 @@
+.countries-length{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.countries-area{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin:30px auto ;
+    gap: 40px;
+    justify-content: space-around;
+}
