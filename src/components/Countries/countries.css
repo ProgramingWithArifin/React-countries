@@ -1,7 +1,12 @@
 .countries-length{
     text-align: center;
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 35px;
+}
+.visited-length{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
 }
 .countries-area{
     display: flex;

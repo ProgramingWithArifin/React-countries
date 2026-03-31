@@ -8,7 +8,6 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
       <Suspense fallback= {<p>Loding The Countries...</p>}>
       <Countries countriesPromise={countriesPromise}></Countries>
       </Suspense>

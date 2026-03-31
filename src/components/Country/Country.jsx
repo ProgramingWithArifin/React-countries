@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './country.css'
-const Country = ({country}) => {
+const Country = ({country, handleVisited}) => {
     const png = country?.flags?.flags.png;
     const alt = country?.flags?.flags.alt;
+    const[visit, updateVisit]=useState('Not Visited');
+    const visitBtn=()=>{
+        updateVisit(visit=='Not Visited'? "Visited":"Not Visited");
+        handleVisited(country, visit);
+    }
     return (
-        <div className='country'>
+        <div className={`country ${visit == 'Not Visited'? 'visited':'not-visited'}`}>
             <img src={png} alt={alt} />
             <h2>Name:{country.name.common}</h2>
             <p>Population:{country?.population?.population}</p>
+            <p>Area:{country?.area?.area} {country?.area?.area>300000?"(Big Country)":"(Small Country)"}</p>
+            <button onClick={visitBtn}>{visit}</button>
         </div>
     );
 };

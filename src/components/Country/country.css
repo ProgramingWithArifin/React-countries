@@ -7,3 +7,18 @@
     justify-content: space-between;
     gap: 10px;
 }
+.country button{
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(30, 147, 214);
+    border:2px solid gray;
+}
+.visited{
+    background-color: rgb(248, 167, 167);
+    
+}
+.not-visited{
+    background-color: rgb(202, 240, 202);
+}
